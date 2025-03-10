@@ -42,8 +42,8 @@ jobs:
 
       # 构建 Docker 镜像
       - name: Build Docker image
-        run: docker build -t ghcr.io/${{ env.image_name }}:1.0.1 web
+        run: docker build -t ghcr.io/${{ env.image_name }}:1.0.2 web
 
       # 推送 Docker 镜像到 GitHub Container Registry
       - name: Push Docker image
-        run: docker push ghcr.io/${{ env.image_name }}:1.0.1
+        run: docker push ghcr.io/${{ env.image_name }}:1.0.2
